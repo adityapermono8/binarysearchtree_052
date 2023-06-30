@@ -45,5 +45,10 @@ public:
 			return; // Exit
 		}
 
+		if (element < parent->info) // If the value in the data field of the new node is less tham that of the parent
+		{
+			parent->leftchild = newNode; // Make the left child of the parent point to the new node
+		}
+
 	}
 };
